@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather checher</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="search">
+        <input type="text" placeholder="enter your city" id="input" />
+
+        <button class="fa-solid fa-magnifying-glass" id="btn"></button>
+      </div>
+      <div class="error-box">
+        <h1>entered location error, page not found</h1>
+        <img src="/404.png" />
+      </div>
+
+      <div class="hidden">
+
+        <div class="weather">
+          <img src="/cloud.png" id="weatheimg" />
+          <h1 id="temperature">22°c</h1>
+          <h2 id="cloud">scatterd cloud</h2>
+        </div>
+
+        <div class="small">
+          <div class="humidity">
+            <i
+              class="fa-sharp fa-solid fa-droplet"
+              style="color: #000000"
+              id="hum"
+            ></i>
+
+            <div class="info">
+              <span class="info1">64%</span>
+              <p class="size">Humidity</p>
+            </div>
+          </div>
+
+          <div class="wind">
+            <i class="fa-solid fa-wind" style="color: #00040a"></i>
+
+            <div class="info">
+              <span class="info2">18 Km/h</span>
+              <p class="size">Wind Speed</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="/script.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/f8a7ac2e46.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
